@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>My First Awesome AR demo</title>
+    
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    
+ 
+    
+  </head>
+  <body>
+    
+    <a-scene embedded arjs="sourceType: webcam;">
+      
+      <!-- a simple primitive - build something with more primitives! -->
+      <a-box position="0 0.5 0" color="red"></a-box>
+      
+      <!-- more complex model I made with photogrammetry
+      <a-gltf-model
+        src="https://cdn.glitch.com/e40da93f-7c00-43cf-8aef-1c31d5330f50%2FSpinosaurus03.glb?v=1606674884116"
+        gltf-model= "https://cdn.glitch.global/5470a600-fbff-423f-9152-00b43532a551/Spinosaurus03.glb?v=1674218780789"
+      >
+      </a-gltf-model>
+      -->
+      
+      <!-- using marker-based AR, here's a link to the hiro marker: https://i.stack.imgur.com/5cahN.png -->
+      <a-marker-camera preset="hiro"></a-marker-camera>
+      
+    </a-scene>
+
+  </body>
+</html>
